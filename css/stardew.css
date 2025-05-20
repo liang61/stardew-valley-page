@@ -1,0 +1,173 @@
+body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f8f0dc;
+      color: #7c5e3c; 
+	
+    }
+	/* 背景图 */
+	.footer-img {
+	  position: fixed;
+	  bottom: 0;
+	  left: 0;
+	  width: 100%;
+	  z-index: -1; /* 在内容下方 */
+	  pointer-events: none; /* 不影响点击 */
+	}
+	/* 第一部分 */
+	
+	.logo{
+		width:30px; 
+		height:auto; 
+		image-rendering: pixelated;  /* 保持像素风 */
+		display: block;
+		margin-top:0 auto;
+	}
+	
+   header {
+      background-color: #7c5e3c; 
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+	
+	/* 导航栏 */	
+	nav {
+	  display: flex;
+	  justify-content: center; 
+	  margin: 0 auto;
+	  align-items: center;
+	  gap: 20px; /* 元素间间距 */
+	  background-color: #7c5e3c; 
+	  padding: 10px 20px;
+	} 
+	nav a {
+		text-decoration: none;
+		color: #333;
+		font-weight: bold;
+		font-size: 18px;
+		position: relative;
+	    padding: 8px 12px;
+        transition: all 0.2s ease-in-out;
+	}
+	nav a:hover {
+	  color: #4caf50;
+	  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+	}
+	
+/* 下拉菜单容器 */
+    .dropdown {
+      position: relative;
+    }
+
+    /* 下拉内容隐藏状态 */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      min-width: 140px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      z-index: 100;
+    }
+/* 显示下拉菜单 */
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+	
+	/* 下拉项样式 */
+    .dropdown-content a {
+        color: #333;
+		padding: 10px 16px;
+		text-decoration: none;
+		display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* .dropdown-content span {
+      margin-right: 8px;
+    }
+    /* 悬停时显示下拉菜单 */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+	.icon {
+	  width: 20px;
+	  height: 20px;
+	  vertical-align: middle;
+	  margin-right: 8px;
+	}
+	
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+	
+    .banner {
+      text-align: center;
+      padding: 2rem;
+      background: url('https://i.imgur.com/g1z7Cz0.jpg') center/cover no-repeat;
+      color: white;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 2rem;
+      gap: 1rem;
+    }
+    .feature-box {
+      background-color: #fff8e1;
+      border: 2px solid #d0a96e;
+      border-radius: 12px;
+      padding: 1.5rem;
+      width: 200px;
+      text-align: center;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+	
+	/*foot*/
+	.footer {
+		width:100%;
+		background-color: #7c5e3c;
+		color: white;
+		text-align: center;
+		padding-bottom:25px;
+		clear:both; 
+	}
+	/*footer*/
+	.footer .btn{ 
+		margin:10px auto; 
+		width:906px; 
+		text-align:left; 
+		padding-left:94px;
+	}
+	.footer .btn a{ 
+		display: block; 
+		margin: 10px auto;
+		color:#fff; 
+		text-decoration:none; 
+		font-family:Arial, Helvetica, sans-serif; 
+		font-size:10px; 
+		letter-spacing:1px;
+	}
+	.footer_con p{ 
+		line-height:22px;
+		text-align:center; 
+		color:#fff; 
+		font-family:"微软雅黑";
+	}
+	/*footer*/
