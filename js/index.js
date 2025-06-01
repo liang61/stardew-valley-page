@@ -27,6 +27,6 @@ function goToSlide(index){
 	 currentIndex  = index;
 }
 //1000是1秒
-//setInterval(nextSlide,3000);
+setInterval(nextSlide,3000);
 
 
