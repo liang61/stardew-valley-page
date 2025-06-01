@@ -1,3 +1,8 @@
+
+
+/* 鼠标移上时的样式 */                                               
+a:hover{color:#ee3350;}  
+
 body {
 	font-family: 'Segoe UI', sans-serif;
     margin: 0;
@@ -99,16 +104,26 @@ body {
 		display: block;
 		margin-top:0 auto;
 	}	
-	
+/* 文字 */
+	.banner {
+	  text-align: center;
+	  padding: 2rem;
+	  background: url('https://i.imgur.com/g1z7Cz0.jpg') center/cover no-repeat;
+	  color: white;
+	}
+	.banner h1 {
+	  font-size: 2.5rem;
+	  margin-bottom: 0.5rem;
+	}
  /* 轮播图 */
 	.carousel{
 		position: relative;
 		width: 800px;
 		margin: auto;
 		overflow: hidden;
+		margin:13px auto 15px auto;
 	}
-		
-	.carousel .carousel_inner{
+	.carousel_inner{
 		display: flex;
 		width: 400%;
 		position: relative;
@@ -136,47 +151,171 @@ body {
 		right: 10px;
 	}
 	/* 底部按钮 */ 
-	.carousel_indcators{
+	/* .carousel .carousel_indcators{
 		position: absolute;
-		bottom: 10px;
-		left: 50%;
-		transform: translateX(-50%);
-		display: flex;	
+		left:400px;
+		bottom:26px;
+	    transform: translateX(-50%);
+		display: flex;
+	} */
+	/* .but{
+		float:left;
+		width:10px;
+		height:10px;
+		margin-right:12px;
+		background:#fff;
+		opacity:0.5;
+		border-radius:50%;
+	}
+	.carousel ol li{cursor:pointer;}
+	.carousel ol .current{
+			color:#fff;
+			background:#ee3350;
+			float:left;
+			width:10px;
+			height:10px;
+			margin-right:12px;
+			text-align:center;
+			line-height:22px;
+			font-size:14px;
+			font-weight:bold;
+			border-radius:50%;
+	} */
+
+	/* 底部圆按钮 */
+	.carousel .carousel_indcators{
+		position: absolute;
+		left:400px;
+		bottom:26px;
+	    transform: translateX(-50%);
+		display: flex;
 	}
 	.carousel_indcators button{
-		width: 12px;
-		height: 12px;
-		cursor: pointer;
-		border: none;
+		float:left;
+		margin-right:12px;
+		/* background:#fff; */
+		opacity:0.7;
+		width: 15px;
+		height: 15px;
 		border-radius: 50%;
-		background-color: #ccc;
-		margin: 0 5px;
+		cursor: pointer;
 	}
-	.carousel_indcators button.active{
-		background-color: dimgray;
+	.now{
+		background-color: #03A007;
+	}
+	
+	
+	
+	/* wiki表单 */
+	table.wikitable {
+		margin: auto;
+	    background-color: transparent;
+	    border-collapse: separate;
+	    border: none;
+	}
+	.wikitable {
+	    background-color: #f8f9fa;
+	    color: #202122;
+	    margin: 1em 0;
+	    border: 1px solid #a2a9b1;
+	    border-collapse: collapse;
+	}
+	table {
+	    font-size: 100%;
+	}
+	table {
+	    display: table;
+	    border-collapse: separate;
+	    box-sizing: border-box;
+	    text-indent: initial;
+	    unicode-bidi: isolate;
+	    border-spacing: 2px;
+	    border-color: gray;
+	}
+	.wikitable tr th{
+		background-color: #03A007;
+		text-align: center;
+		border-color: #007448;
+		box-shadow: 0px 1px rgba(0, 0, 0, 0.3);
+		color: white;
+		text-shadow: 0px 2px #00321f;
+		border: 1px solid #8DCAF0;
+		padding: 0.2em;
+	}
 		
 		
+	.wikitable tr td{
+		border: 1px solid #8DCAF0;
+		padding: 0.2em;
+		background-color: lightblue;
+			
 	}
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-    .banner {
-      text-align: center;
-      padding: 2rem;
-      background: url('https://i.imgur.com/g1z7Cz0.jpg') center/cover no-repeat;
-      color: white;
-    }
-    .banner h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
+	.floatleft {
+	    float: left;
+	    clear: left;
+		margin: 0 0.5em 0.5em 0;
+	}
+	
+	
+	/* 视频 */
+	.video{
+		margin:auto; display: flex; justify-content: center;
+	}
+	
+	
+
+	
+	/* 通知 */
+	
+	.concert{
+		width: 100%;
+	}
+	.news {
+		width: 100%;
+		/* background: rgba(0, 0, 0, 0.5); */
+		aspect-ratio: 16/9;
+		border-radius: 5px;
+		position: relative;
+		/* right: 140px;
+		bottom: 120px; */
+		list-style: none;
+		padding: 0px;
+		margin: 0px;
+	}
+	
+	.news li {
+	  width: 100%;
+	  height: 20%;
+	
+	}
+	
+	.news a {
+	   font-size: 18px; 
+	  position: relative;
+	  color:black; 
+	  text-decoration: none;
+	  display: block;
+	  height: 100%;
+	  line-height: 70px;
+	}
+	
+	.news a span {
+	  font-size: 18px;
+	  color: aliceblue;
+	  position: absolute;
+	  right: 12px;
+	}
+	
+	.news a:hover {
+	  font-size: 20px;
+	  font-weight: bold;
+	  color: rgb(231, 94, 126);
+	  background: #8DCAF0;
+	}
+
+
+
+	/*  */
     .features {
       display: flex;
       justify-content: center;
@@ -194,6 +333,7 @@ body {
       box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
       cursor: pointer;
     }
+
 	
 	/*foot*/
 	.footer {

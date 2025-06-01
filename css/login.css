@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* 基础页面样式 */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(44, 59, 59);
+    overflow: hidden;
+}
+/* 背景容器样式 */
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;/* 固定背景 */ 
+	background-size: 100%;  /* 确保图片覆盖整个容器 */
+	background-position: 60% ;  /* 图片显示 */
+    transform: scale(1.1);/* 稍微放大背景，防止移动时出现边缘 */
+}
+
+/* 开始体验按钮 */
+.start-btn {
+    position: relative;
+    padding: 20px 60px;
+	background-color: #35DE9E;
+    /* background: rgba(53, 222, 158, 0.7); */
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;  /* 过渡动画 */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(50, 59, 88, 0.8);
+}
+/* 按钮文字样式 */
+.start-btn span {
+    position: relative;
+    z-index: 1;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 文字发光效果 */
+}
+/* 按钮悬停效果 */
+.start-btn:hover {
+    transform: scale(1.1);/* 放大效果 */
+    box-shadow: 0 0 30px rgba(50, 59, 88, 0.9);
+}
+/* 按钮光效动画 */
+.start-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+/* 按钮光效动画 */
+.start-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+/* 按钮光效动画悬停效果 */
+.start-btn:hover::before {
+    left: 100%;
+}
+/* 去掉链接下划线 */
+.start-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+@keyframes gradient{
+    100%{
+        background-position: -800% 0%;
+    }
+}
