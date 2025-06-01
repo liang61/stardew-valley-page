@@ -1,154 +1,158 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>星露谷百科助手</title>
-  <link href="../css/stardew.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="../js/index.js"></script>
-</head>
-<body>	
-	<div class="background-image">
-		<img src="../img/background.png" alt="背景图片">
-	</div>
-	<!--  第一部分 开头-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>星露谷百科助手</title>
+		<link href="../css/stardew.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="../js/index.js"></script>
+	</head>
 	
-	<header>
-    <nav class="sidebar">
-		<a href="#">首页 </a>
-        <a href="#">人物介绍 </a>	
-		<div class="dropdown">
-			<a href="#">农作物 ▾</a>
-			<div class="dropdown-content">
-				<a href="#"><img src="../img/spring.png" class="icon">春季</a>
-				<a href="#"><img src="../img/summer.png" class="icon">夏季</a>
-				<a href="#"><img src="../img/fall.png" class="icon">秋季</a>
-				<a href="#"><img src="../img/winter.png" class="icon">冬季</a>     
+	<body>
+		<div class="parallax p1">
+
+			<!--  第一部分 开头-->
+
+			<header>
+				<nav class="sidebar">
+					<a href="#">首页 </a>
+					<a href="#">人物介绍 </a>
+					<div class="dropdown">
+						<a href="#">农作物 ▾</a>
+						<div class="dropdown-content">
+							<a href="#"><img src="../img/spring.png" class="icon">春季</a>
+							<a href="#"><img src="../img/summer.png" class="icon">夏季</a>
+							<a href="#"><img src="../img/fall.png" class="icon">秋季</a>
+							<a href="#"><img src="../img/winter.png" class="icon">冬季</a>
+						</div>
+					</div>
+					<a href="#">节日</a>
+					<a href="#">攻略</a>
+					<a href="#">更多</a>
+				</nav>
+			</header>
+
+			<div class="logo">
+				<img src="../img/logo1.png" style="display: block; margin: 0 auto;" />
+			</div>
+
+			<section class="banner">
+				<h1>欢迎来到星露谷百科助手！</h1>
+				<p>为农场主们打造的全能攻略站 ✨</p>
+			</section>
+
+			<!-- 轮播图 -->
+			<div class="carousel">
+				<div class="carousel_inner">
+					<img src="../img/pic1.png" alt=" " />
+					<img src="../img/pic2.png" alt=" " />
+					<img src="../img/pic3.png" alt=" " />
+					<img src="../img/pic4.png" alt=" " />
+					<img src="../img/pic5.png" alt=" " />
+					<img src="../img/pic6.png" alt=" " />
+				</div>
+
+				<button class="prev" onclick="prevSlide()">&#10094;</button>
+				<button class="next" onclick="nextSlide()">&#10095;</button>
+				<div class="carousel_indcators">
+					<button onclick="goToSlide(0)"></button>
+					<button onclick="goToSlide(1)"></button>
+					<button onclick="goToSlide(2)"></button>
+					<button onclick="goToSlide(3)"></button>
+					<button onclick="goToSlide(4)"></button>
+					<button onclick="goToSlide(5)"></button>
+				</div>
 			</div>
 		</div>
-		<a href="#">节日</a>
-		<a href="#">攻略</a>
-		<a href="#">更多</a>
-    </nav>
-</header>
-
-<div class="logo"> 
-	<img src="../img/main_logo.png" style="display: block; margin: 0 auto;" />
-</div> 		
-
-<section class="banner">
-    <h1>欢迎来到星露谷百科助手！</h1>
-    <p>为农场主们打造的全能攻略站 ✨</p>
-</section>
-
-<!-- 轮播图 -->
-<div class="carousel">
-	<div class="carousel_inner" >
-		<img src="../img/pic1.png" alt=" "/>
-		<img src="../img/pic2.png" alt=" "/>
-		<img src="../img/pic3.png" alt=" "/>
-		<img src="../img/pic4.png" alt=" "/>
-		<img src="../img/pic5.png" alt=" "/>
-		<img src="../img/pic6.png" alt=" "/>
-	</div>
-
-	<button class="prev" onclick="prevSlide()">&#10094;</button>
-	<button class="next" onclick="nextSlide()">&#10095;</button>
-	<div class="carousel_indcators">
-		<button onclick="goToSlide(0)"></button>
-		<button onclick="goToSlide(1)"></button>
-		<button onclick="goToSlide(2)"></button>
-		<button onclick="goToSlide(3)"></button>
-		<button onclick="goToSlide(4)"></button>
-		<button onclick="goToSlide(5)"></button>
-	</div>
-</div>
-  
- <!-- 表单 --> 
- <table class="wikitable" style="width: 60%;">
-	 <tbody>
-		<tr>
-			<th>关于</th>
-			<th id="sidebar" class="nomobile" style="width: 300px;">资源
-			</th>
-		</tr>
-		<tr>
-		  <td style="vertical-align: top;">
-		    <img src="https://stardewvalleywiki.com/mediawiki/images/a/af/Horse_rider.png" alt="Horse rider" width="83" height="105" style="float: left; margin-right: 10px;">
-		    <p>
-		      星露谷物语是一个牧场类的RPG游戏。你继承了爷爷在星露谷的农场，但是你手头上只有最基础的农具和少许的金钱，你得靠此开始你的新生活。
-		      你能把这片杂草丛生的田地变成一个繁荣的家园吗？这很不容易，自从JOJA公司来到了小镇，以前的生活都变了。
-		      社区中心，这个曾经是小镇最活跃的地方，如今却是破烂不堪。但山谷里似乎充满了机会，只要你肯努力，就有可能把星露谷变得更繁荣。
-		    </p>
-		  </td>
-		  <td>
-			 <div class="video">
-			 	<video width="400" controls>
-			 		 <source src="../video/Stardew Valley.mp4" type="video/mp4" />
-			 	</video>
-			 </div> 
-		  </td>
-		</tr>
-		<tr>
-			<th colspan="2" class="t">新闻公告</td>
-		</tr>
-		<tr>
-			<td>
-				<ul class="news">
-				  <li><a href="https://www.stardewvalleyconcert.com/">
-				      踏入星露谷的音乐之旅，管弦乐队将演奏游戏配乐和视频的全新编曲!<span></span></a>
-				  </li>
-				  <li><a href="https://www.stardewvalley.net/the-stardew-valley-cookbook-is-now-available/">
-				      《星露谷食谱》现已上市！<span>2024/5/14</span></a>
-				  </li>
-				  <li><a href="https://www.stardewvalley.net/stardew-valley-1-6-update-is-out-now-on-pc/">
-				      Stardew Valley 1.6 更新：现已在PC上发布！<span>2024/3/19</span></a>
-				  </li>
-				  <li><a href="https://www.stardewvalley.net/some-cool-stardew-valley-music-arrangements-interpretations-and-covers/">
-				      一些很酷的《星露谷》音乐编曲、诠释和翻唱<span>2022/5/3</span></a>
-				  </li>
-				  <li><a href="https://www.stardewvalley.net/1-5-6-out-now-on-steam-gog/">
-				      Steam/GOG 现已推出 1.5.6 版本<span>2021/12/21</span></a>
-				  </li>
-				</ul>
-				<!-- <span><h4 >踏入星露谷的音乐之旅，管弦乐队将演奏游戏配乐和视频的全新编曲!</h4></span>
+		<!-- 表单 -->
+		<div class="parallax p2">
+		<table class="wikitable" style="width: 60%;">
+			<tbody>
+				<tr>
+					<th>关于</th>
+					<th id="sidebar" class="nomobile" style="width: 300px;">资源
+					</th>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;">
+						<img src="https://stardewvalleywiki.com/mediawiki/images/a/af/Horse_rider.png" alt="Horse rider"
+							width="83" height="105" style="float: left; margin-right: 10px;">
+						<p>
+							星露谷物语是一个牧场类的RPG游戏。你继承了爷爷在星露谷的农场，但是你手头上只有最基础的农具和少许的金钱，你得靠此开始你的新生活。
+							你能把这片杂草丛生的田地变成一个繁荣的家园吗？这很不容易，自从JOJA公司来到了小镇，以前的生活都变了。
+							社区中心，这个曾经是小镇最活跃的地方，如今却是破烂不堪。但山谷里似乎充满了机会，只要你肯努力，就有可能把星露谷变得更繁荣。
+						</p>
+					</td>
+					<td>
+						<div class="video">
+							<video width="400" controls>
+								<source src="../video/Stardew Valley.mp4" type="video/mp4" />
+							</video>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="2" class="t">新闻公告</td>
+				</tr>
+				<tr>
+					<td>
+						<ul class="news">
+							<li><a href="https://www.stardewvalleyconcert.com/">
+									踏入星露谷的音乐之旅，管弦乐队将演奏游戏配乐和视频的全新编曲!<span></span></a>
+							</li>
+							<li><a href="https://www.stardewvalley.net/the-stardew-valley-cookbook-is-now-available/">
+									《星露谷食谱》现已上市！<span>2024/5/14</span></a>
+							</li>
+							<li><a href="https://www.stardewvalley.net/stardew-valley-1-6-update-is-out-now-on-pc/">
+									Stardew Valley 1.6 更新：现已在PC上发布！<span>2024/3/19</span></a>
+							</li>
+							<li><a
+									href="https://www.stardewvalley.net/some-cool-stardew-valley-music-arrangements-interpretations-and-covers/">
+									一些很酷的《星露谷》音乐编曲、诠释和翻唱<span>2022/5/3</span></a>
+							</li>
+							<li><a href="https://www.stardewvalley.net/1-5-6-out-now-on-steam-gog/">
+									Steam/GOG 现已推出 1.5.6 版本<span>2021/12/21</span></a>
+							</li>
+						</ul>
+						<!-- <span><h4 >踏入星露谷的音乐之旅，管弦乐队将演奏游戏配乐和视频的全新编曲!</h4></span>
 				<p>《四季交响曲》是星露谷的新音乐会，由 35 人组成的管弦乐队演奏游戏中最令人难忘的音乐，舞台上方的屏幕播放游戏画面，还有专为这场音乐会创作的原创内容。</p>
 				<p>由 ConcernedApe 策划的《四季交响曲》是一段音乐之旅，从你踏入山谷的第一天开始，直到你登上山顶。
 					看着你的农场在四季中茁壮成长，探索山谷中最令人难忘的地点：从鹈鹕镇到骷髅洞穴，从姜岛到卡利科沙漠，从潜艇到巫师塔等等。</p> -->
-			</td>
-			<td >
-				<a href="https://www.stardewvalleyconcert.com/"><img src="../img/concert.jpg" class="concert"/>
-			</td>
-		</tr>
-	
-	 </tbody>
- </table>
-  
-  
- <!-- 通知公告 --> 
-<div class="introduction">
+					</td>
+					<td>
+						<a href="https://www.stardewvalleyconcert.com/"><img src="../img/concert.jpg" class="concert" />
+					</td>
+				</tr>
 
-</div>  
-  
-<section class="features">
-	<div class="feature-box">👨‍🌾 NPC 角色百科</div>
-    <div class="feature-box">🌱 农作物图鉴</div>
-    <div class="feature-box">🎉 节日活动</div>
-    <div class="feature-box">📈 种植收益助手</div>
-	
-</section>
-  
-<!-- 结尾 -->
+			</tbody>
+		</table>
 
-	<div class="footer">
-		<div class="btn">
-			<img src="../img/author_logo.gif" style="display: block; margin: 0 auto;">	
+
+		<!-- 通知公告 -->
+		<div class="introduction">
+
 		</div>
-		<div class="footer_con">
-			<p>制作人：2310240176 | 课程项目展示 | 数据来源：星露谷Wiki</p>
-			<p>Stardew Valley Copyright © 2016-2025 ConcernedApe LLC </p>
-			<p>GRANGE is a registered trademark of National Grange of the Order of Patrons of Husbandry, used under license. All rights reserved.</p>
+
+		<section class="features">
+			<div class="feature-box">👨‍🌾 NPC 角色百科</div>
+			<div class="feature-box">🌱 农作物图鉴</div>
+			<div class="feature-box">🎉 节日活动</div>
+			<div class="feature-box">📈 种植收益助手</div>
+
+		</section>
+</div>
+		<!-- 结尾 -->
+
+		<div class="footer">
+			<div class="btn">
+				<img src="../img/author_logo.gif" style="display: block; margin: 0 auto;">
+			</div>
+			<div class="footer_con">
+				<p>制作人：2310240176 | 课程项目展示 | 数据来源：星露谷Wiki</p>
+				<p>Stardew Valley Copyright © 2016-2025 ConcernedApe LLC </p>
+				<p>GRANGE is a registered trademark of National Grange of the Order of Patrons of Husbandry, used under
+					license. All rights reserved.</p>
+			</div>
 		</div>
-	
 	</body>
 </html>
