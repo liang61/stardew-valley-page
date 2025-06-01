@@ -8,9 +8,12 @@
   <script type="text/javascript" src="../js/index.js"></script>
 </head>
 <body>	
+	<div class="background-image">
+		<img src="../img/background.png" alt="背景图片">
+	</div>
 	<!--  第一部分 开头-->
-
-  <header>
+	
+	<header>
     <nav class="sidebar">
 		<a href="#">首页 </a>
         <a href="#">人物介绍 </a>	
@@ -52,7 +55,7 @@
 	<button class="prev" onclick="prevSlide()">&#10094;</button>
 	<button class="next" onclick="nextSlide()">&#10095;</button>
 	<div class="carousel_indcators">
-		<button class="now" onclick="goTOSlide(0)"></button>
+		<button onclick="goToSlide(0)"></button>
 		<button onclick="goToSlide(1)"></button>
 		<button onclick="goToSlide(2)"></button>
 		<button onclick="goToSlide(3)"></button>

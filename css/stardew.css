@@ -1,5 +1,3 @@
-
-
 /* 鼠标移上时的样式 */                                               
 a:hover{color:#ee3350;}  
 
@@ -15,16 +13,33 @@ body {
 	color: #7c5e3c;
 	}
 	
-    
-	/* 第一部分 */	
-   header {
+ /* 背景图片样式 */
+ .background-image {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     overflow: hidden;
+ }
+ 
+ .background-image img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center bottom;
+	}
+		
+/* 第一部分 */		
+header {
 		background-color: #7c5e3c;
 		color: white;
 		padding: 1rem;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-    }
+	}
 	
 	/* 导航栏 */	
 	nav {
@@ -150,61 +165,32 @@ body {
 	.next{
 		right: 10px;
 	}
-	/* 底部按钮 */ 
-	/* .carousel .carousel_indcators{
-		position: absolute;
-		left:400px;
-		bottom:26px;
-	    transform: translateX(-50%);
-		display: flex;
-	} */
-	/* .but{
-		float:left;
-		width:10px;
-		height:10px;
-		margin-right:12px;
-		background:#fff;
-		opacity:0.5;
-		border-radius:50%;
-	}
-	.carousel ol li{cursor:pointer;}
-	.carousel ol .current{
-			color:#fff;
-			background:#ee3350;
-			float:left;
-			width:10px;
-			height:10px;
-			margin-right:12px;
-			text-align:center;
-			line-height:22px;
-			font-size:14px;
-			font-weight:bold;
-			border-radius:50%;
-	} */
 
 	/* 底部圆按钮 */
-	.carousel .carousel_indcators{
+	.carousel_indcators{
 		position: absolute;
-		left:400px;
-		bottom:26px;
-	    transform: translateX(-50%);
+		left: 400px;
+		bottom: 26px;
+		transform: translateX(-50%);
 		display: flex;
 	}
 	.carousel_indcators button{
-		float:left;
-		margin-right:12px;
-		/* background:#fff; */
-		opacity:0.7;
+		float: left;
+		margin-right: 12px;
+		opacity: 0.7;
 		width: 15px;
 		height: 15px;
 		border-radius: 50%;
 		cursor: pointer;
+		background-color: #fff;
 	}
-	.now{
+	.carousel_indcators button:hover{
 		background-color: #03A007;
 	}
-	
-	
+	.carousel_indcators button.now{
+		background-color: #03A007;
+		opacity: 1;
+	}
 	
 	/* wiki表单 */
 	table.wikitable {
@@ -272,12 +258,9 @@ body {
 	}
 	.news {
 		width: 100%;
-		/* background: rgba(0, 0, 0, 0.5); */
 		aspect-ratio: 16/9;
 		border-radius: 5px;
 		position: relative;
-		/* right: 140px;
-		bottom: 120px; */
 		list-style: none;
 		padding: 0px;
 		margin: 0px;
