@@ -1,0 +1,51 @@
+/* 暗色主题下的背景图片 */
+html.theme-dark .parallax.p1 {
+    background-image: url('../img/bg_night.png');
+}
+
+/* 主题切换开关样式 */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* 开关的总宽度 */
+    height: 34px; /* 开关的总高度 */
+    margin-left: 20px; /* 与导航项的间距 */
+    vertical-align: middle; /* 垂直对齐 */
+}
+
+.theme-switch input[type="checkbox"] {
+    display: none; /* 隐藏原生的复选框 */
+}
+
+.theme-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* 未选中状态的背景颜色 */
+    border-radius: 34px; /* 圆角 */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-switch label:before {
+    content: "";
+    position: absolute;
+    width: 26px; /* 滑块的宽度 */
+    height: 26px; /* 滑块的高度 */
+    left: 4px; /* 滑块的初始位置 */
+    bottom: 4px; /* 滑块的初始位置 */
+    background-color: #fff; /* 滑块的颜色 */
+    border-radius: 50%; /* 圆形滑块 */
+    transition: transform 0.3s;
+}
+
+/* 当复选框被选中时，改变label的背景颜色和滑块的位置 */
+.theme-switch input[type="checkbox"]:checked + label {
+    background-color: #98750e; /* 选中状态的背景颜色 */
+}
+
+.theme-switch input[type="checkbox"]:checked + label:before {
+    transform: translateX(26px); /* 滑块向右移动的距离 */
+}
