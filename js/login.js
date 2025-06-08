@@ -20,7 +20,7 @@ document.getElementById('startBtn').addEventListener('click', function() {
 window.onload = function() {
     setTimeout(function() {
         document.getElementById('loadingContainer').style.display = 'none';
-    }, 1000); // 1秒后隐藏加载动画
+    }, 1000); //1秒后隐藏加载动画
 }
 
 

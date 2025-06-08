@@ -28,12 +28,11 @@ body{
 .start-btn {
     position: relative;
     padding: 20px 60px;
-	background-color: #35DE9E;
-    /* background: rgba(53, 222, 158, 0.7); */
+    background-color: #35DE9E;
     border-radius: 50px;
     cursor: pointer;
     overflow: hidden;
-    transition: all 0.3s ease;  /* 过渡动画 */
+    transition: all 0.3s ease;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 20px rgba(50, 59, 88, 0.8);
 }

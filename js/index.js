@@ -37,7 +37,7 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
 }
 
-// 切换主题的函数
+// 切换主题
 function toggleTheme() {
     // 检查当前主题，如果当前是暗色主题，则切换到亮色主题
     if (localStorage.getItem('theme') === 'theme-dark') {
