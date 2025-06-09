@@ -110,7 +110,7 @@ header {
 	  vertical-align: middle;
 	  margin-right: 8px;
 	}
-	
+
     nav a {
       color: white;
       margin: 0 10px;
@@ -355,3 +355,50 @@ header {
 		margin: 5px 0; /* 添加适当的段落间距 */
 	}
 	/*footer*/
+
+    /* 二级菜单样式 */
+    .submenu {
+        position: relative;
+    }
+
+    .submenu-content {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #fff;
+        min-width: 140px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 6px;
+        z-index: 100;
+    }
+
+    .submenu:hover .submenu-content {
+        display: block;
+    }
+
+    .submenu-content a {
+        color: #333;
+        padding: 10px 16px;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+    }
+
+    .submenu-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    /* 箭头样式 */
+    .submenu > a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .submenu > a::after {
+        content: "▶";
+        font-size: 12px;
+        margin-left: 8px;
+        color: #666;
+    }
