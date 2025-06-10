@@ -10,7 +10,6 @@ var back = document.getElementById('back');
 }
 
 
-
 // 开始体验按钮点击事件
 document.getElementById('startBtn').addEventListener('click', function() {
     window.location.href = 'stardew_valley.html';
